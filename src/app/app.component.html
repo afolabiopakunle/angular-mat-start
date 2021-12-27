@@ -1,1 +1,13 @@
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+
+    <mat-spinner *ngIf="isLoading" mode="indeterminate"></mat-spinner>
+    <ul>
+      <li *ngFor="let option of options">{{ option }}</li>
+    </ul>
+
+    <button mat-raised-button
+            matTooltip="Info about the action"
+            matTooltipPosition="right"
+            aria-label="Button that displays a tooltip that hides when scrolled out of the container"
+            class="example-button">
+      Action
+    </button>
